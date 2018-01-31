@@ -20,6 +20,17 @@ int main ()
 
 	scanf ("%d", &input); 
 
+	if(input < 1 || input > 3)
+	{
+		do 
+		{
+			printf("Incorrect value. Try again: ");
+			scanf ("%d", &input); 
+		}
+		while(input < 1 || input > 3);			
+	}
+
+
 	switch (input)
 	{
 		case 1: 
